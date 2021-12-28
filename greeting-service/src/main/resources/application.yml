@@ -1,13 +1,24 @@
+server:
+  port: 8080
+
+#Pegando as configurações do git e usando o profile prod
 spring:
   application:
     name: greeting-service
+  config:
+    import: optional:configserver:http://localhost:8888/
+  cloud:
+    config:
+      profile: prod
+
+#Habilitar o actuator a mostrar os endpoints ele vem desabilitado por motivos de segurança
 management:
   endpoints:
     web:
       exposure:
         include:
-          - '*'
-greeting-service:
-  greeting: "ola"
-  default-value: "Mundo"
+          - refresh
+#greeting-service:
+#  greeting: "ola"
+#  default-value: "Mundo"
 

@@ -7,16 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="greeting-service" />
+        <module name="book-service" />
         <module name="greeting-config-server" />
+        <module name="cambio-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="book-service" target="11" />
+      <module name="cambio-service" target="11" />
       <module name="greeting-config-server" target="11" />
       <module name="greeting-service" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="book-service" options="-parameters" />
+      <module name="cambio-service" options="-parameters" />
       <module name="greeting-config-server" options="-parameters" />
       <module name="greeting-service" options="-parameters" />
     </option>

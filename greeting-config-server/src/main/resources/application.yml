@@ -3,6 +3,13 @@ server:
 spring:
   application:
     name: greeting-config-server
-  profiles:
-    active:
-    - native
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MarceloWalther-Dev/greeting-config-server.git
+          #username: marcelo.walther.10@gmail.com
+          #password:
+          default-label: master
+          search-paths:
+            - 'greeting-service*'

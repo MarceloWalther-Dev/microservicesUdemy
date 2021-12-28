@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/book-service/book-service.iml" filepath="$PROJECT_DIR$/book-service/book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cambio-service/cambio-service.iml" filepath="$PROJECT_DIR$/cambio-service/cambio-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/greeting-config-server/greeting-config-server.iml" filepath="$PROJECT_DIR$/greeting-config-server/greeting-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/greeting-service/greeting-service.iml" filepath="$PROJECT_DIR$/greeting-service/greeting-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microservicesUdemy.iml" filepath="$PROJECT_DIR$/.idea/microservicesUdemy.iml" />
